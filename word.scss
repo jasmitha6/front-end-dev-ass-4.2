@@ -1,0 +1,54 @@
+$black : black;
+$white : white;
+$size : 30px;
+
+#d1{
+	background-color:$black;
+	color:$white;
+	padding:$size;
+}
+
+#d2{
+	background-color:$black;
+	color:$white;
+	padding:$size;
+}
+#d3{
+	background-color:$black;
+	color:white;
+	padding:$size;
+}
+@mixin br($radius){
+	border-radius:$radius;
+}
+#d1{
+	border : 3px solid black;
+	@include br(40px);
+}
+
+#d2{
+	border : 3px solid black;
+	@include br(40px);
+}
+#d3{
+	border : 3px solid black;
+	@include br(40px);
+}
+
+.message {
+  border: 1px solid white;
+  padding: 10px;
+  color: black;
+}
+
+.success {
+  @extend .message;
+  border-color: green;
+}
+
+.error {
+  @extend .message;
+  border-color: red;
+}
+
+
