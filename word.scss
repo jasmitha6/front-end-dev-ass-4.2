@@ -1,4 +1,4 @@
-$black : black;
+$black : black;                                               /* variable argument to change color of div*/
 $white : white;
 $size : 30px;
 
@@ -18,7 +18,7 @@ $size : 30px;
 	color:white;
 	padding:$size;
 }
-@mixin br($radius){
+@mixin br($radius){                                             /*mixins for change of border radius*/
 	border-radius:$radius;
 }
 #d1{
@@ -35,7 +35,7 @@ $size : 30px;
 	@include br(40px);
 }
 
-.message {
+.message {                                                                       /*use of extends*/
   border: 1px solid white;
   padding: 10px;
   color: black;
